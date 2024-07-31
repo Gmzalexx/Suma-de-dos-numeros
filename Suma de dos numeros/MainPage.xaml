@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Suma_de_dos_numeros.MainPage"
+             xmlns:viewModel="clr-namespace:Suma_de_dos_numeros">
+
+    <ContentPage.BindingContext>
+        <viewModel:sumamvvm/>
+    </ContentPage.BindingContext>
+
+    <StackLayout Padding="10">
+        <Entry Placeholder="Numero 1" Text="{Binding Number1}" />
+        <Entry Placeholder="Numero 2" Text="{Binding Number2}" />
+        <Button Text="Sumar"/>
+        <Label Text="Resultado:"/>
+        <Label Text="{Binding Result}"/>
+    </StackLayout>
+
+</ContentPage>
